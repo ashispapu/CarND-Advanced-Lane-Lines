@@ -60,6 +60,12 @@ Here are the results of distortion correction on each of the test images (locate
 
 ###Pipeline (Images)
 
+ Complete pipeline for thhis project is given below 
+
+![ScreenShot](./project_pipeline.png)
+
+Image Source : https://medium.com/@heratypaul/udacity-sdcnd-advanced-lane-finding-45012da5ca7d#.lmyp49h7u
+
 ![alt text][multiple_thresholds]
 
 The example above displays the results of multiple thresholds on each test image in the test_images folder. Section 3 of the code explains this process step-by-step, with examples of each individual threshold. In order, the thresholding used on the images is as follows:
