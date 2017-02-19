@@ -128,9 +128,11 @@ Finally, I plotted the warped images back down onto the road such that, for each
 Click on the image or link below to view the video results of the project.
 
 ### P4_video_final.mp4
-https://www.youtube.com/watch?v=cqasdvt4zhc
+https://www.youtube.com/watch?v=cqasdvt4zhc  
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=5ZKbpNY-rok
+https://www.youtube.com/watch?v=cqasdvt4zhc&feature=youtu.be
+
+<a href="https://www.youtube.com/watch?v=cqasdvt4zhc&feature=youtu.be
 " target="_blank"><img src="http://img.youtube.com/vi/5ZKbpNY-rok/0.jpg" 
 alt="YouTube" width="240" height="180" border="10" /></a>
 
