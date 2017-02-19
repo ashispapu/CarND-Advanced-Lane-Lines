@@ -84,17 +84,43 @@ The region masking results are shown below. I chose to limit the mask to a regio
 
 ![alt text][region_masked]
 
-The code for my perspective transform is performed in a function  called transform_perspective. The function takes in a thresholded binary image with the source points coinciding with the region masking points explained in the region masking table above. For destination points, I chose the outline of the image being transformed. Here are the results of the transforms:
+The code for my perspective transform is performed in a function  called transform_perspective (Section 4). The function takes in a thresholded binary image with the source points coinciding with the region masking points explained in the region masking table above. For destination points, I chose the outline of the image being transformed. Here are the results of the transforms:
 
 ![alt text][perspective_transform]  
 
-The next step after transforming the perspective was to detect lane-line pixels and to fit their positions using a polynomial in Section V of my code. After developing functions for sliding_windows and shaded_lanes, I was able to detect the lanes and yield the following results:
+The next step after transforming the perspective was to detect lane-line pixels and to fit their positions using a polynomial in Section 5 of my code. After developing functions for sliding_windows and shaded_lanes, I was able to detect the lanes and yield the following results:
 
 Sliding Windows Technique:
 ![alt text][sliding_windows]
 
 Shaded Lanes Technique:
-![alt text][shaded_lanes]
+![alt text][shaded_lanes] 
+
+After detecting the lanes I needed to calculate the radius of curvature for each of the polynomial fits that I performed. The results of these calculations are shown in the table below. I used the radius of curvature example code from Udacity's lessons to create the calculation cells.
+
+| Test Image | Radius of Curvature (Left) | Radius of Curvature (Right) | 
+|:----------:|:--------------------------:|:---------------------------:| 
+| test1.png  | 2985.467894 meters         | 2850.142018 meters          | 
+| test2.png  | 4984.505982 meters         | 12357.329365 meters         |
+| test3.png  | 10088.084712 meters        | 2363.421967 meters          |
+| test4.png  | 9894.520013 meters         | 2366.846436 meters          |
+| test5.png  | 2548.327638 meters         | 6124.849321 meters          |
+| test6.png  | 4173.313472 meters         | 45794.832663 meters         |
+
+Another calculation performed was the offset from the lane's center. The calculations are shown in the code cell following the radius of curvature, and yielded the following:
+
+| Test Image | Offset from Center |
+|:----------:|:------------------:| 
+| test1.png  | 1.020143 meters    |
+| test2.png  | 0.901214 meters    |
+| test3.png  | 0.935571 meters    |
+| test4.png  | 1.123214 meters    |
+| test5.png  | 0.930286 meters    |
+| test6.png  | 1.070357 meters    |  
+
+Finally, I plotted the warped images back down onto the road such that, for each image, the lane area is identified clearly:
+
+![alt text][lane_mapping]
 
 
 
