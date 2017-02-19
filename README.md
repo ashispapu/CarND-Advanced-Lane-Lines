@@ -86,7 +86,15 @@ The region masking results are shown below. I chose to limit the mask to a regio
 
 The code for my perspective transform is performed in a function  called transform_perspective. The function takes in a thresholded binary image with the source points coinciding with the region masking points explained in the region masking table above. For destination points, I chose the outline of the image being transformed. Here are the results of the transforms:
 
-![alt text][perspective_transform]
+![alt text][perspective_transform]  
+
+The next step after transforming the perspective was to detect lane-line pixels and to fit their positions using a polynomial in Section V of my code. After developing functions for sliding_windows and shaded_lanes, I was able to detect the lanes and yield the following results:
+
+Sliding Windows Technique:
+![alt text][sliding_windows]
+
+Shaded Lanes Technique:
+![alt text][shaded_lanes]
 
 
 
