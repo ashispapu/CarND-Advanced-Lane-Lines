@@ -66,7 +66,24 @@ The example above displays the results of multiple thresholds on each test image
 
 + Color Channel HLS & HSV Thresholding - I extract the S-channel of the original image in HLS format and combine the result with the extracted V-channel of the original image in HSV format.
 
-![alt text][color_thresholds]
+![alt text][color_thresholds]  
+
++ Binary X & Y - I use Sobel operators to filter the original image for the strongest gradients in both the x-direction and the y-direction.
+
+![alt text][sobel_x]
+![alt text][sobel_y] 
+
+The region masking results are shown below. I chose to limit the mask to a region with the following points: 
+
+| Point       | Value                                    | 
+|:-----------:|:----------------------------------------:| 
+| Upper Left  | (image width x 0.4, image height x 0.65) | 
+| Upper Right | (image width x 0.6, image height x 0.65) |
+| Lower Right | (image width, image height)              |
+| Lower Left  | (0, image height)                        |
+
+![alt text][region_masked]
+
 
 
 
