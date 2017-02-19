@@ -1,7 +1,7 @@
 
 [//]: # (Image References)
 [distortion]: https://github.com/ashispapu/CarND-Advanced-Lane-Lines/blob/master/output_images/distortion_11.png
-[distortion_theory]: https://github.com/ashispapu/CarND-Advanced-Lane-Lines/blob/master/Screenshots/distortion_11.png
+[distortion_theory]: https://github.com/ashispapu/CarND-Advanced-Lane-Lines/blob/master/distortion_11.png
 [corners_unwarp]: https://github.com/ashispapu/CarND-Advanced-Lane-Lines/blob/master/output_images/corners_unwarp2.png
 [distortion_corrected]: https://github.com/ashispapu/CarND-Advanced-Lane-Lines/blob/master/output_images/undistorted.png
 [sobel_x]: https://github.com/ashispapu/CarND-Advanced-Lane-Lines/blob/master/output_images/sobel_x.png
