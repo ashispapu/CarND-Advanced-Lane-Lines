@@ -84,7 +84,9 @@ The region masking results are shown below. I chose to limit the mask to a regio
 
 ![alt text][region_masked]
 
+The code for my perspective transform is performed in a function I created called perspective_transform. The function takes in a thresholded binary image and source points, with the source points coinciding with the region masking points explained in the region masking table above. For destination points, I chose the outline of the image being transformed. Here are the results of the transforms:
 
+![alt text][perspective_transform]
 
 
 
