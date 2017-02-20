@@ -143,7 +143,8 @@ alt="YouTube" width="240" height="180" border="10" /></a>
 
 ### 
 
-
+### Discussion
+The project is bit challenging in the sense that organizing all the functional units to a complete system . First few steps like camera calibration , finding the  gradient magnitude and direction and color thresholding are straight forward .The  level of difficulties slowly increase with perspective tranform  and making it work on the video stream .This has lot to do with the tweaking all the different thresholds anf more trails on test images . What I feel , my pipline won't be able to perform at this level if videos were taken at nights . For this I need to work more on different scenarios to make it more robust . Overall , It's a good experience to work on this project .
 
 
 
